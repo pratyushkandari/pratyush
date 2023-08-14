@@ -1,0 +1,28 @@
+<html>
+    <head>
+        
+    </head>
+<body>
+Number1 : <input type="text" id="num1" name="num1"> <br><br>
+Number2 : <input type="text" id="num2" name="num2"> <br> <br>
+<input type="button" value="click" onclick="fun()"> <br><br>
+Result : <input type="text" id="res" >
+
+<script>
+    function fun(){
+ let a =Number(document.getElementById("num1").value);
+ let b=Number(document.getElementById("num2").value);
+ let c;
+ if(a==b){
+    c=(a+b)*3;
+ document.getElementById("res").value=c;
+ }
+ else{
+    c=a+b;
+    document.getElementById("res").value=c;
+ }
+}
+
+</script>
+</body>
+</html>
